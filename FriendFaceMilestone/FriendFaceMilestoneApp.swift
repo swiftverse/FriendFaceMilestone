@@ -11,7 +11,7 @@ import SwiftUI
 struct FriendFaceMilestoneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FriendFace()
         }
     }
 }

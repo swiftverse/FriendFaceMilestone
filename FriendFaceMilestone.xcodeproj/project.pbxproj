@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		24AF22A227735ECE00D9D042 /* FriendFaceMilestoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF22A127735ECE00D9D042 /* FriendFaceMilestoneApp.swift */; };
-		24AF22A427735ECE00D9D042 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF22A327735ECE00D9D042 /* ContentView.swift */; };
+		24AF22A427735ECE00D9D042 /* FriendFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF22A327735ECE00D9D042 /* FriendFace.swift */; };
 		24AF22A627735ECF00D9D042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AF22A527735ECF00D9D042 /* Assets.xcassets */; };
 		24AF22A927735ECF00D9D042 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AF22A827735ECF00D9D042 /* Preview Assets.xcassets */; };
+		24AF22B127735F2A00D9D042 /* FriendDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF22B027735F2A00D9D042 /* FriendDetail.swift */; };
+		24AF22B527735F4700D9D042 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF22B427735F4700D9D042 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24AF229E27735ECE00D9D042 /* FriendFaceMilestone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendFaceMilestone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AF22A127735ECE00D9D042 /* FriendFaceMilestoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceMilestoneApp.swift; sourceTree = "<group>"; };
-		24AF22A327735ECE00D9D042 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24AF22A327735ECE00D9D042 /* FriendFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFace.swift; sourceTree = "<group>"; };
 		24AF22A527735ECF00D9D042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24AF22A827735ECF00D9D042 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		24AF22B027735F2A00D9D042 /* FriendDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetail.swift; sourceTree = "<group>"; };
+		24AF22B427735F4700D9D042 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		24AF22A027735ECE00D9D042 /* FriendFaceMilestone */ = {
 			isa = PBXGroup;
 			children = (
+				24AF22B327735F3900D9D042 /* ViewModel */,
+				24AF22B227735F3000D9D042 /* Model */,
+				24AF22AF27735F1500D9D042 /* Views */,
 				24AF22A127735ECE00D9D042 /* FriendFaceMilestoneApp.swift */,
-				24AF22A327735ECE00D9D042 /* ContentView.swift */,
 				24AF22A527735ECF00D9D042 /* Assets.xcassets */,
 				24AF22A727735ECF00D9D042 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				24AF22A827735ECF00D9D042 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24AF22AF27735F1500D9D042 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24AF22A327735ECE00D9D042 /* FriendFace.swift */,
+				24AF22B027735F2A00D9D042 /* FriendDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24AF22B227735F3000D9D042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24AF22B427735F4700D9D042 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24AF22B327735F3900D9D042 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24AF22A427735ECE00D9D042 /* ContentView.swift in Sources */,
+				24AF22B527735F4700D9D042 /* User.swift in Sources */,
+				24AF22B127735F2A00D9D042 /* FriendDetail.swift in Sources */,
+				24AF22A427735ECE00D9D042 /* FriendFace.swift in Sources */,
 				24AF22A227735ECE00D9D042 /* FriendFaceMilestoneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
